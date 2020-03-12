@@ -12,17 +12,18 @@ for i in range(len(losers)):
 
 count = 0
 done = False
-# go through list of losers, change count to reflect index of winner
+# go through list of losers, change count to reflect index of curren winner being paid out
 for i in range(len(losers)):
+    #for each loser pay out debt until it reaches zero
     while losers[i][1]!=0 and done == False:
-        #if last winner done paid out remaining balance will be rake, send to biggest loser
+        #if last winner paid out remaining balance will be rake, send to biggest loser
         if count == (len(winners) - 1) and losers[i][1]> winners[count][1]:
             print (losers[i][0] + ' pays ' + winners[count][0] + ' ' + str(round(winners[count][1],2)))
             losers[i][1] = losers[i][1] - winners[count][1]
             print (losers[i][0] + ' pays ' + str(round(losers[i][1],2)) + ' in rake to ' + bl)
             done = True
             
-        #if losers remaining debt greater than winners winning update debt and count
+        #if losers remaining debt greater than winners bakance to be paid update debt and count
         elif losers[i][1] >= winners[count][1]:
             print (losers[i][0] + ' pays ' + winners[count][0] + ' ' + str(round(winners[count][1],2)))
             losers[i][1] = losers[i][1] - winners[count][1]
