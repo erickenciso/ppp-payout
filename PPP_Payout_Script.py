@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[14]:
-
 
 winners = ([['Santi', 40]])
 losers = ([['Bink',40],['TChan',20]])
@@ -49,9 +44,6 @@ for i in range(len(losers)):
 for i in range(len(losers)):
     if losers[i][1] != 0:
         print (losers[i][0] + ' pays ' + str(round(losers[i][1],2)) + ' in rake to ' + bl)
-
-
-# In[ ]:
 
 
 
