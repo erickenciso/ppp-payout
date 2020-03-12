@@ -1,13 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[74]:
-
-
-
-
 winners = ([['Santi', 420.83],['Dallas',366.62],['Darrell', 365.44],['Weener', 275.66],['David', 202.53]])
 losers = ([['Bink',60],['TChan',200],['Ethan',527.92],['Shomper',981.47]])
+
 l = []
 for i in range(len(losers)):
     l.append(losers[i][1])
@@ -41,20 +34,7 @@ for i in range(len(losers)):
             print (losers[i][0] + ' pays ' + winners[count][0] + ' ' + str(round(losers[i][1],2)))
             winners[count][1] = winners[count][1] - losers[i][1]
             losers[i][1] = 0
-           
-            
-            
-                   
-                   
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
